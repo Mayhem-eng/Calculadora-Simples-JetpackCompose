@@ -139,16 +139,73 @@ fun CalculatoraScreen(){
             }
         }
 
-            if (result.isNotEmpty()){
+            if (operator == "+"){
                 //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
                 Button(modifier = Modifier
+
                     .padding(vertical = 16.dp)
                     .align(CenterHorizontally), onClick = {
 
                 }) {
-                    Text(text = "RESULTADO DA $operator : $result")
+                    Text(text = "Somar valores")
                 }
             }
+        else if (operator == "-"){
+                //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
+                Button(modifier = Modifier
+
+                    .padding(vertical = 16.dp)
+                    .align(CenterHorizontally), onClick = {
+
+                }) {
+                    Text(text = "Subtrair valores")
+                }
+            }
+        else if (operator == "*"){
+                //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
+                Button(modifier = Modifier
+
+                    .padding(vertical = 16.dp)
+                    .align(CenterHorizontally), onClick = {
+
+                }) {
+                    Text(text = "multiplicar valores")
+                }
+            }
+        else if (operator == "/"){
+            //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
+            Button(modifier = Modifier
+
+                .padding(vertical = 16.dp)
+                .align(CenterHorizontally), onClick = {
+
+            }) {
+                Text(text = "Dividir valores")
+            }
+        }
+        else if(operator == "%"){
+                //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
+                Button(modifier = Modifier
+
+                    .padding(vertical = 16.dp)
+                    .align(CenterHorizontally), onClick = {
+
+                }) {
+                    Text(text = "modular valores")
+                }
+
+            }
+        if (result.isNotEmpty()){
+            //Text(text = "RESULTADO: $result", Modifier.padding(vertical = 16.dp).align(CenterHorizontally).size(100.dp))
+            Button(modifier = Modifier
+
+                .padding(vertical = 16.dp)
+                .align(CenterHorizontally), onClick = {
+
+            }) {
+                Text(text = "A soma de $value1 + $value2 = $result")
+            }
+        }
         }
 }
 
